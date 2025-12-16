@@ -1,0 +1,67 @@
+/* 基础外观 + 迷彩背景 */
+:root{--theme:#ff8c00;--dark:#3e2723;--light:#ffd54f;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+  background:url(../images/camo.jpg) center/cover fixed;
+  color:#fff8e1;min-height:100vh;
+}
+a{color:var(--light);}
+.btn{
+  display:inline-block;margin:15px 10px;padding:14px 32px;
+  background:linear-gradient(135deg,var(--theme) 0%,#ff6f00 100%);
+  color:#fff;font-size:18px;border-radius:30px;
+  box-shadow:0 4px 10px rgba(0,0,0,.3);transition:all .3s ease;
+}
+.btn:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(255,140,0,.5);}
+header{
+  background:rgba(30,30,30,.45);
+  text-align:center;padding:50px 20px 40px;
+  border-bottom:2px solid var(--theme);
+}
+header h1{font-size:48px;text-shadow:0 0 10px rgba(0,0,0,.8);}
+header p{margin-top:10px;font-size:20px;text-shadow:0 0 8px rgba(0,0,0,.7);}
+.nav{margin-top:30px;}
+.section{
+  max-width:1000px;margin:40px auto;padding:30px;
+  background:rgba(121,85,72,.65);border-radius:8px;
+  box-shadow:0 5px 15px rgba(0,0,0,.3);border:1px solid #a1887f;
+}
+.section h2{color:var(--light);margin-bottom:20px;font-size:32px;border-bottom:2px solid var(--theme);padding-bottom:10px;}
+footer{
+  text-align:center;padding:25px 10px;font-size:14px;
+  background:rgba(30,30,30,.45);border-top:2px solid var(--theme);
+  margin-top:60px;
+}
+/* 首页菜单 */
+.menu-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;
+  max-width:900px;margin:50px auto;
+}
+.menu-card{
+  background:rgba(141,110,99,.8);padding:40px 20px;border-radius:12px;text-align:center;
+  box-shadow:0 4px 12px rgba(0,0,0,.3);transition:transform .3s;
+}
+.menu-card:hover{transform:translateY(-8px);}
+.menu-card h3{font-size:26px;margin-bottom:15px;color:var(--light);}
+/* 枪械分类 */
+.category-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;margin-top:25px;
+}
+.category-card{background:rgba(141,110,99,.8);padding:25px;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,.2);}
+.category-card h3{color:#ffd54f;margin-bottom:15px;}
+.category-card ul{margin-left:20px;line-height:1.8;}
+/* 子弹表格 */
+table{width:100%;border-collapse:collapse;margin-top:25px;background:rgba(141,110,99,.8);}
+th,td{padding:14px;text-align:left;border-bottom:1px solid #a1887f;}
+th{background:#5d4037;color:#ffd54f;}
+tr:nth-child(even){background:rgba(255,140,0,.05);}
+/* 治安法条文块 */
+.law-article{
+  background:rgba(141,110,99,.8);
+  padding:20px;
+  border-left:5px solid #ff8c00;
+  margin:20px 0;
+  border-radius:6px;
+}
+.law-article h4{color:#ffd54f;margin-bottom:10px;}
